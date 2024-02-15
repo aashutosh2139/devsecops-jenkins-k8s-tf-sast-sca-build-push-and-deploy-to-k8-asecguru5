@@ -38,7 +38,7 @@ pipeline {
             }
     	}
 	   
-	stage('Kubernetes Deployment of Apoti Webapp Application') {
+	stage('Kubernetes Deployment of DCN Bugg Web Application') {
 	   steps {
 	      withKubeConfig([credentialsId: 'kubelogin']) {
 		  sh('kubectl delete all --all -n devsecops')
